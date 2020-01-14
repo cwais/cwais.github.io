@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hackathon</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+
+<td id="messageText1621">
+    <div id="textDiv1621" style="word-wrap:break-word;">CREATE&nbsp;TABLE&nbsp;tmp_report_24672_camp_with_dimcat&nbsp;(PRIMARY&nbsp;KEY(campaign_id_in_kenshoo))&nbsp;AS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CAST(IFNULL(GROUP_CONCAT(IF(INSTR(dimcat.category_name,'674,')=1,dimcat.category_name,null)&nbsp;SEPARATOR&nbsp;'|'),'674,-1')&nbsp;as&nbsp;CHAR)&nbsp;as&nbsp;categoryName_674,CAST(IFNULL(GROUP_CONCAT(IF(INSTR(dimcat.category_name,'663,')=1,dimcat.category_name,null)&nbsp;SEPARATOR&nbsp;'|'),'663,-1')&nbsp;as&nbsp;CHAR)&nbsp;as&nbsp;categoryName_663,CAST(IFNULL(GROUP_CONCAT(IF(INSTR(dimcat.category_name,'494,')=1,dimcat.category_name,null)&nbsp;SEPARATOR&nbsp;'|'),'494,-1')&nbsp;as&nbsp;CHAR)&nbsp;as&nbsp;categoryName_494,CAST(IFNULL(GROUP_CONCAT(IF(INSTR(dimcat.category_name,'428,')=1,dimcat.category_name,null)&nbsp;SEPARATOR&nbsp;'|'),'428,-1')&nbsp;as&nbsp;CHAR)&nbsp;as&nbsp;categoryName_428,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sc.*&nbsp;&nbsp;&nbsp;FROM&nbsp;tmp_report_24672_struct_campaigns&nbsp;sc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LEFT&nbsp;JOIN&nbsp;tmp_report_24672_dimcat&nbsp;dimcat&nbsp;ON&nbsp;dimcat.campaign_id&nbsp;=&nbsp;sc.campaign_id_in_kenshoo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GROUP&nbsp;BY&nbsp;sc.campaign_id_in_kenshoo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
+
+
+</body>
+</html>
